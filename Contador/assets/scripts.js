@@ -5,9 +5,9 @@ const SUBTRAIR = document.getElementById("subtrair");
 const ADICIONAR = document.getElementById("adicionar");
 
 ADICIONAR.addEventListener("click", increment);
-// ADICIONAR.addEventListener("click", verificarNegativo)
+ADICIONAR.addEventListener("click", verificarNegativo)
 SUBTRAIR.addEventListener("click",decrement);
-// SUBTRAIR.addEventListener("click", verificarNegativo)
+SUBTRAIR.addEventListener("click", verificarNegativo)
 
 function increment() {
 	count++;
@@ -31,14 +31,14 @@ function decrement() {
 	}
 }
 
-// function verificarNegativo(){
-// 	if(CURRENT_NUMBER.innerText < "0"){
-// 		CURRENT_NUMBER.style.color = "red"
-// 	}
-// 	else if(CURRENT_NUMBER.innerText > "0"){
-// 		CURRENT_NUMBER.style.color = "green"
-// 	}
-// 	else{
-// 		CURRENT_NUMBER.style.color = "black"
-// 	}
-// }
+function verificarNegativo(){
+	if(CURRENT_NUMBER.innerText < "0"){
+		CURRENT_NUMBER.style.color = "red"
+	}
+	else if(CURRENT_NUMBER.innerText > "0"){
+		CURRENT_NUMBER.style.color = "yellow"
+	}
+	else{
+		CURRENT_NUMBER.style.color = "black"
+	}
+}
