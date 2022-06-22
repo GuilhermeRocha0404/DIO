@@ -1,2 +1,2 @@
-# DIO
- Repositório para salvar os desafios da DIO
+# Digital Innovation One - Javascript
+ Repositório para salvar os desafios de Javascript da DIO
